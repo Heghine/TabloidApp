@@ -1,0 +1,64 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@color/mint"
+    tools:context="com.science.inc.tabloid.MainActivity" >
+
+	<ImageView 
+	    android:id="@+id/app_img"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_centerHorizontal="true"
+	    android:layout_marginTop="200dp"
+	    android:src="@drawable/ic_loading_icon"
+	    android:contentDescription="@string/icon_missing"/>
+	
+	<TextView 
+	    android:id="@+id/app_name"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_centerHorizontal="true"
+	    android:layout_marginTop="10dp"
+	    android:layout_below="@id/app_img"
+	    android:textColor="@color/white"
+	    android:textSize="20sp"
+	    android:typeface="sans"
+	    android:text="@string/launcher_app_name"/>
+	
+	<LinearLayout 
+	    android:id="@+id/twitter_login_container"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:gravity="center_vertical"
+	    android:paddingLeft="10dp"
+	    android:paddingRight="15dp"
+	    android:paddingTop="3dp"
+	    android:paddingBottom="3dp"
+	    android:layout_centerHorizontal="true"
+		android:layout_alignParentBottom="true"
+		android:background="@drawable/button_border"
+	    android:orientation="horizontal">
+		
+	    <ImageView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginRight="15dp"
+	        android:src="@drawable/ic_twitter_logo"
+	        android:contentDescription="@string/app_name"/>
+	    
+		<Button 
+		    android:id="@+id/twitter_login_btn"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:textColor="@color/white"
+		    android:background="@color/mint"
+		    android:typeface="sans"
+		    android:textSize="15sp"
+		    android:text="@string/sign_in_with_twitter"/>
+	</LinearLayout>
+</RelativeLayout>
